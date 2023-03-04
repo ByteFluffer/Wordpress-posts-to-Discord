@@ -34,7 +34,7 @@ function post_to_discord($new_status, $old_status, $post) {
     $content = str_replace(']]>', ']]&gt;', $content);
 
     $str_tags = strip_tags($content); 
-    $str_200 = substr($str_tags, 0, 300); 
+    $str_200 = substr($str_tags, 0, 200); 
 
     $message = $authorName . " heeft een nieuw artikel op de website geplaatst genaamd: " . $postTitle . "\n" . $str_200 . "...... " . "\n \n". "Lees verder op onze website: ". $permalink;
  
